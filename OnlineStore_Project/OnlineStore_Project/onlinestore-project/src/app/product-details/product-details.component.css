@@ -1,0 +1,87 @@
+body{
+  background-image: url('/assets/detailsbg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+ .product-image-container {
+  border: 2px solid #e0e0e0;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  background-color: #fff;
+  max-width: 100%;
+  overflow: hidden;
+}
+/* .display-5{
+  color:white;
+  font-weight: 100;
+} */
+
+
+.img-thumbnail {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  cursor: pointer;
+  max-width: 100%;
+  max-height: 100%;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+
+.img-thumbnail.border-primary {
+  border-color: #007185 !important;
+}
+
+/* Thumbnail hover effect */
+.img-thumbnail:hover {
+  transform: scale(1.1);
+  border-color: #ccc;
+}
+
+
+.img-fluid {
+  width: 100%;
+  max-height: 400px;
+  object-fit:contain;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+
+@media (max-width: 768px) {
+  .img-fluid {
+    max-height: 300px;
+  }
+}
+
+:root {
+  --custom-btn-color: #f57c00;
+  --custom-btn-hover-color: #e65100;
+}
+
+.btn-outline-custom {
+  background-color: var(--custom-btn-color);
+  color: white;
+  border: none;
+  background-color: #5e5eca;
+  border-block-color: revert;
+}
+
+.btn-custom:hover {
+  background-color: var(--custom-btn-hover-color);
+  color: white;
+}
+.feature{
+  font-size: 30px;
+}
+.mb-4 p{
+  font-size: 17px;
+  font-weight: 620;
+}

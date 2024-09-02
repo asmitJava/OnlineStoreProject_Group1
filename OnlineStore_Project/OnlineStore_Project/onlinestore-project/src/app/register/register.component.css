@@ -1,0 +1,89 @@
+/* Ensure the background covers the entire viewport */
+.background-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/assets/images/background image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Container for the registration form */
+.register-container {
+  max-width: 400px; /* Same as the login container */
+  width: 100%;
+  padding: 40px;
+  background-color:#ddd;
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+/* Headline styles */
+h2 {
+  text-align: center;
+  color: #fff; /* White color for better contrast */
+  margin-bottom: 20px;
+}
+
+div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: black; /* White color for better contrast */
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.7); /* Same as the login input */
+  color: #333;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #08a537; /* Green background for the submit button */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #056321; /* Slightly darker green on hover */
+}
+
+.error-message {
+  color: #ff6666; /* Light red for contrast */
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+p:last-of-type {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: black; /* White color for better contrast */
+}
+
+a {
+  color: #1f2ce4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,138 @@
+/* Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  background: url('/assets/img.png') no-repeat center center fixed; /* Replace with your background image URL */
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Ensure body takes full viewport height */
+  overflow: hidden; /* Hide scrollbar */
+}
+
+/* Container Styles */
+.container {
+  max-width: 500px; /* Reduced width for a smaller container */
+  margin: 1.5rem auto;
+  padding: 1rem; /* Reduced padding */
+  background-color: rgba(255, 255, 255, 0.85); /* More transparent white background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Slightly more prominent shadow */
+  height: 90vh; /* Adjusted height to fit within viewport */
+  overflow: hidden; /* Prevent scrollbars */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+}
+
+/* Heading Styles */
+h5 {
+  color: #007bff; /* Primary color */
+  font-size: 1.125rem; /* Adjusted font size */
+  margin-bottom: 0.75rem;
+}
+
+h4 {
+  color: #0056b3; /* Darker shade for sub-headings */
+  font-size: 1rem; /* Adjusted font size */
+  margin-bottom: 0.5rem;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form Group Styles */
+.form-group {
+  margin-bottom: 0.75rem; /* Reduced margin */
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.25rem; /* Reduced margin */
+  color: #333; /* Darker text color for better readability */
+}
+
+/* Form Control Styles */
+.form-control {
+  width: 100%;
+  padding: 0.5rem; /* Reduced padding */
+  border: 1px solid #ddd; /* Light border for a softer look */
+  border-radius: 4px; /* Slightly more rounded corners */
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for focus effect */
+}
+
+.form-control:focus {
+  border-color: #80bdff; /* Highlight border color on focus */
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25); /* Subtle shadow on focus */
+}
+
+/* Text Danger Styles */
+.text-danger {
+  color: #dc3545; /* Error color */
+  font-size: 0.75rem; /* Reduced font size */
+  margin-top: 0.25rem;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem; /* Reduced padding */
+  font-size: 0.875rem; /* Reduced font size */
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effect */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Darker shade for hover effect */
+  transform: scale(1.05); /* Slight scaling effect */
+}
+
+/* Form Check Styles */
+.form-check {
+  margin-bottom: 0.75rem; /* Reduced margin */
+}
+
+.form-check-input {
+  margin-right: 0.5rem; /* Adjusted spacing between input and label */
+}
+
+.form-check-label {
+  font-size: 0.875rem; /* Reduced font size */
+  color: #333; /* Darker text color for better readability */
+}
+
+/* Payment Method Sections */
+.payment-method-form {
+  border: 1px solid #ddd; /* Light border for a softer look */
+  border-radius: 4px; /* Slightly more rounded corners */
+  padding: 0.75rem; /* Reduced padding */
+  margin-bottom: 0.75rem; /* Reduced margin */
+  background-color: rgba(248, 249, 250, 0.85); /* More transparent light grey background */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 90%; /* Ensure the container fits well on smaller screens */
+    height: auto; /* Allow height to adjust based on content */
+    padding: 1rem; /* Reduced padding for smaller screens */
+  }
+
+  .form-group {
+    margin-bottom: 0.75rem; /* Adjusted margin for smaller screens */
+  }
+
+  .btn-primary {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+}

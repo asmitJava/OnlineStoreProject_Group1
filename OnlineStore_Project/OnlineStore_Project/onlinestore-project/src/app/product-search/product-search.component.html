@@ -1,0 +1,32 @@
+<body>
+  <div class="container">
+    <h1 class="store-heading"><span>BEST</span> SELLER</h1>
+    <div class="form-group">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Search for products..."
+        [(ngModel)]="searchTerm"
+        (input)="searchProducts(searchTerm)"
+      />
+    </div>
+    <div class="list-group-container">
+      <ul class="list-group" *ngIf="searchResults !== null">
+        <li
+          *ngFor="let product of searchResults"
+          class="list-group-item"
+          [routerLink]="['/product', product.id]"
+          style="cursor: pointer;"
+        >
+          <div class="product-item">
+            <img [src]="getProductImage(product.id)" alt="{{ product.name }}" class="product-image">
+            <div class="product-info">
+              <h5>{{ product.name }}</h5>
+              <p>{{ product.basicdetails }}</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
